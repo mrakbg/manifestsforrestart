@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restart-practice-deployment
+  labels:
+    app: restart-practice
+spec:
+  replicas: 2  # You can increase the number of replicas as needed
+  selector:
+    matchLabels:
+      app: restart-practice
+  template:
+    metadata:
+      labels:
+        app: restart-practice
+    spec:
+      containers:
+        - name: restart-practice-container
+          image: mrakbg/restart-practice:latest
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Always  # Ensures the latest image is pulled
