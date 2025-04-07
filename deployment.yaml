@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: restart-practice-container
-          image: mrakbg/restart-practice:latest
+          image: mrakbg/predictyourday:v2
           ports:
             - containerPort: 3000
           imagePullPolicy: Always  # Ensures the latest image is pulled
