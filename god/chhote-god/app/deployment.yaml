@@ -4,6 +4,7 @@ metadata:
   name: restart-practice-deployment
   labels:
     app: restart-practice
+  namespace: restart-practice-service
 spec:
   replicas: 2  # You can increase the number of replicas as needed
   selector:
