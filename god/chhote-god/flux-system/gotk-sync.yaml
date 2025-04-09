@@ -20,7 +20,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 2m0s
-  path: ../app
+  path: ./god/chhote-god/app
   prune: true
   sourceRef:
     kind: GitRepository
