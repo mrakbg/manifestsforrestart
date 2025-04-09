@@ -6,7 +6,7 @@ metadata:
     app: restart-practice
   namespace: restart-practice-service
 spec:
-  replicas: 2  # You can increase the number of replicas as needed
+  replicas: 5  # You can increase the number of replicas as needed
   selector:
     matchLabels:
       app: restart-practice
