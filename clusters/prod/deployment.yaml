@@ -6,7 +6,7 @@ metadata:
     app: restart-depo
   namespace: restart-deployment
 spec:
-  replicas: 2  # You can increase the number of replicas as needed
+  replicas: 1  # You can increase the number of replicas as needed
   selector:
     matchLabels:
       app: restart
