@@ -36,9 +36,9 @@ when you run bootstrap commands , flux also created a folder structure and some 
 
 the yaml files which define how often flux syncs and at which namespace everything is created related to flux and it's like yaml files for controllers created in flux-system namesapce.
 
-so all these files will be created under flux-system folder and pushed to git. now if you write any yaml files in the same hierarvchy as flux-system folder or create any folder where you push your manifests. flux will by default monitor and apply them in cluster. 
+so all these files will be created under flux-system folder and pushed to git. now if you write any yaml files in the same hierarchy as flux-system folder or create any folder where you push your manifests. flux will by default monitor and apply them in cluster. 
 
-you can write and push manifests in any folder you want but you will have to mention path in kustomization and lfux related files. so it knows from where to fetach and monitor. 
+you can write and push manifests in any folder you want but you will have to mention path in kustomization and flux related files. so it knows from where to fetach and monitor. 
 
 more to come after i do handson. 
- ---- for readme on github
+ ----
