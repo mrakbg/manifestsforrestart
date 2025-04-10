@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restart-deployment
+  labels:
+    app: restart-depo
+spec:
+  replicas: 2  # You can increase the number of replicas as needed
+  selector:
+    matchLabels:
+      app: restart
+  template:
+    metadata:
+      labels:
+        app: restart
+    spec:
+      containers:
+        - name: restart-practice-container
+          image: mrakbg/predictyourday:latest-28
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Always  # Ensures the latest image is pulled
