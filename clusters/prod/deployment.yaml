@@ -5,7 +5,7 @@ metadata:
   labels:
     app: restart-depo
 spec:
-  replicas: 2  # You can increase the number of replicas as needed
+  replicas: 4  # You can increase the number of replicas as needed
   selector:
     matchLabels:
       app: restart
