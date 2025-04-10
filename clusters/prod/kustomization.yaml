@@ -4,3 +4,4 @@ namespace: restart-deployment
 resources:
 - namespace.yaml
 - deployment.yaml
+- service.yaml
