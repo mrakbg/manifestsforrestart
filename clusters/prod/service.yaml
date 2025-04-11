@@ -4,7 +4,7 @@ metadata:
   name: restart-practice-service
 spec:
   selector:
-    app: restart-practice
+    app: restart
   ports:
     - protocol: TCP
       port: 80     # Exposed service port
