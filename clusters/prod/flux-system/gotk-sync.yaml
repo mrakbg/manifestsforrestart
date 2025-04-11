@@ -20,8 +20,24 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./clusters/prod/kim
+  path: ./clusters/prod/anuj
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
+
+---
+
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: rama
+  namespace: flux-system
+spec:
+  interval: 1m
+  path: ./clusters/prod/rama
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+
