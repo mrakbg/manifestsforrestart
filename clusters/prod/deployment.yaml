@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: restart-practice-deployment
+  name: restart-practice-deployment2
   labels:
-    app: restart-practice
+    app: restart-practice2
 spec:
   replicas: 2  # You can increase the number of replicas as needed
   selector:
     matchLabels:
-      app: restart-practice
+      app: restart-practice2
   template:
     metadata:
       labels:
-        app: restart-practice
+        app: restart-practice2
     spec:
       containers:
-        - name: restart-practice-container
+        - name: restart-practice-container2
           image: mrakbg/predictyourday:latest
           ports:
             - containerPort: 3000
