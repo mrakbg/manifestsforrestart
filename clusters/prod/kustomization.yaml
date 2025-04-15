@@ -1,4 +1,4 @@
-namespace: anuj
+namespace: kk
 
 resources:
   - namespace.yaml
