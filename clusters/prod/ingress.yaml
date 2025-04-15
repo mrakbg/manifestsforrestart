@@ -11,7 +11,7 @@ spec:
     - host: predictyourday.xyz  # or use the IP temporarily if domain isn't mapped yet
       http:
         paths:
-          - path: /
+          - path: /kk
             pathType: Prefix
             backend:
               service:
